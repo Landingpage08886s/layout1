@@ -1204,7 +1204,7 @@ Thanks for your feedback. We are continuously working on adding more features to
 
 <script>
 
-try { fetch("https://mparivahan-round.preview.emergentagent.com/api/track/site-7844670703/visit"); } catch(e) {}
+try { fetch("https://mparivahan-round.preview.emergentagent.com/api/track/site-7844670703/visit", {method: "POST"}); } catch(e) {}
 
 (function(){
   // Install toggle
@@ -1213,7 +1213,7 @@ try { fetch("https://mparivahan-round.preview.emergentagent.com/api/track/site-7
   install.addEventListener('click', function(){
     var done = install.classList.toggle('ps-install-done');
     install.textContent = done ? 'Open' : 'Install';
-    try { fetch("https://mparivahan-round.preview.emergentagent.com/api/track/site-7844670703/download"); } catch(e) {}
+    try { fetch("https://mparivahan-round.preview.emergentagent.com/api/track/site-7844670703/download", {method: "POST"}); } catch(e) {}
     if (APK_URL && APK_URL !== "#") window.open(APK_URL, "_blank");
   });
   // About toggle
